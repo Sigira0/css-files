@@ -1,0 +1,186 @@
+:root {
+	--labour-red: #ff004f;
+	--hackney-grey: #8f8f8f;
+}
+
+.team-container {
+	display: grid;
+	width: 100%;
+	background: var(--hackney-grey);
+	grid-gap: 2vw;
+	justify-items: center;
+	align-items: center;
+	color: white;
+	font-size: 3vw;
+	line-height: 4vw;
+	text-align: center;
+	grid-template-areas:
+		"pic pic text";
+}
+
+.team-pic {
+	grid-area: pic;
+	height: auto;
+	margin: 2vw 2vw 2vw 10vw;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.team-text {
+	grid-area: text;
+}
+
+.councillor-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
+	grid-gap: 2vw;
+	font-size: 1.25vw;
+	line-height: 1.4vw;
+}
+
+.councillor1 {
+	display: grid;
+	grid-template-areas:
+		"pic1 pic1 text1";
+	align-items: center;
+	width: 100%;
+	grid-gap: 1vw;
+}
+
+.councillor1-pic {
+	grid-area: pic1;
+	justify-self: center;
+	height: auto;
+	width: 80%;
+}
+
+.councillor1-text {
+	grid-area: text1;
+}
+
+.councillor2 {
+	display: grid;
+	grid-template-areas:
+		"pic2 pic2 text2";
+	align-items: center;
+	width: 100%;
+	grid-gap: 1vw;
+}
+
+.councillor2-pic {
+	grid-area: pic2;
+	justify-self: center;
+	height: auto;
+	width: 80%;
+}
+
+.councillor2-text {
+	grid-area: text2;
+}
+
+.councillor-name {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 1.5vw;
+	line-height: 2vw;
+}
+
+.indent {
+	text-indent: 1em;
+}
+
+.ita {
+	font-style: italic;
+}
+
+.centred {
+	text-align: center;
+}
+
+.slightly-bold {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.nilwrap {
+	white-space: nowrap;
+}
+
+.break {
+	line-height: 2vw;
+}
+
+.ward-leaflet {
+	margin: auto;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.3);
+	width: 100%;
+}
+
+.gdpr {
+	font-size: 1.5vh;
+	line-height: 1.7vh;
+	font-style: italic;
+}
+
+/*
+all the changes needed when viewing in
+portrait orientation - eg on a mobile
+*/
+
+@media (orientation: portrait) {
+
+	.team-container {
+		font-size: 4vw;
+		line-height: 5vw;
+		grid-template-areas:
+			"pic"
+			"pic"
+			"pic"
+			"text"
+			"text";
+	}
+
+	.team-pic {
+		margin: 2vw auto 1vw;
+		width: 90%;
+	}
+
+	.councillor-container {
+		font-size: 4vw;
+		line-height: 5vw;
+	}
+
+	.councillor1 {
+		display: grid;
+		width: 75%;
+		grid-template-areas:
+			"pic1"
+			"text1";
+	}
+
+	.councillor1-pic {
+		width: 50%;
+	}
+
+
+	.councillor2 {
+		display: grid;
+		width: 75%;
+		grid-template-areas:
+			"pic2"
+			"text2";
+	}
+
+	.councillor2-pic {
+		width: 50%;
+	}
+
+	.councillor-name {
+		font-size: 5vw;
+		line-height: 8vw;
+	}
+
+	.break {
+		line-height: 5vw;
+	}
+}
