@@ -1,0 +1,14 @@
+<h1 style="color: red; font-family: Georgia;">
+	GDPR Statement
+</h1>
+<p style="color: grey; font: italic 15px Georgia; width: 66%; margin: 2em auto;">
+	As a political party, Labour has a key role in engaging with voters as part of our
+	democracy. We use information you provide about your views, as well as other
+	information we have, for our purposes as a political party. For more information
+	about the data we process, please see the
+	<a href='https://labour.org.uk/privacy-policy/' target='_blank'>
+	privacy policy on Labour's website</a>.
+	If you add your email address and/or 'phone number to a survey or petition and
+	return it to us, you confirm that you would like the Labour Party and its elected
+	representatives to contact you about campaigns, events, and opportunities to get involved.
+</p>
